@@ -8,9 +8,8 @@ Parse form is a simple package used to parse a form's input fields. It also prov
 </br>
 
 ### Install
-If you're using meteor run `mrt add meteor-parse-form` to install the package.  
-Othewise, add the `parse_form.js` file to an HTML script tag `<script src='js/parse_form.js'>`.  
-*jQuery is a requirement and must be initialized before parsing a form.*
+`mrt add meteor-parse-form` to install the Meteor package.  
+Or add the `parse_form.js` file and include a script tag `<script src='js/parse_form.js'>`.  
 
 
 
@@ -37,7 +36,10 @@ We call `new ParseForm` and pass in the form element. Alternatively you can also
 
 ```javascript
 var form = new ParseForm(e.target);
-console.log(form.name, form.email, form.password);
+
+// form.name     ==  'John Doe'
+// form.email    ==  'john@gmail.com'
+// form.password == 'password1'
 ```
 <br/>
 
