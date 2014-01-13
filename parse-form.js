@@ -13,5 +13,7 @@ ParseForm = function(elem) {
   // cache form jQuery object
   this.$el = $(elem);
 
+  // save each input into array, e.g. [{name: 'email', value:'jdoe@gmail.com'}]
+  this.inputs = this.$el.serializeArray();
 };
 
