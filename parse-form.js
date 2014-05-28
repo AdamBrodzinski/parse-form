@@ -21,7 +21,7 @@ ParseForm = function(elem) {
   // TODO refactor into for loop
   $.each(this.inputs, function(i, el){
     var name = self.inputs[i].name;
-    // save input value, e.g. form.$email >>> 'jdoe@gmail.com'
+    // save input value, e.g. form.email >>> 'jdoe@gmail.com'
     self[name] = self.inputs[i].value;
     // save jquery cached element, e.g. form.$email
     self['$' + name] = self.$el.find("input:nth-child("+ (i+1) +")");
