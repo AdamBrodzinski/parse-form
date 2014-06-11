@@ -1,6 +1,6 @@
 # Parse-Form
 
-Parse form is a simple package used to parse a form's input fields. It also provide some helper methods to grab the raw nodes and jQuery wrapped nodes.
+Parse form is a micro library used to parse a form's input fields and return it's values. It also provide some helper methods to grab the raw nodes and jQuery wrapped nodes.
 
 
 
