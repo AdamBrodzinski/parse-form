@@ -1,19 +1,16 @@
 # Parse-Form
 
-Parse form is a simple package used to parse a form's input fields. It also provide some common helpers to validate, manipulate, and throw errors.
+Parse form is a simple package used to parse a form's input fields. It also provide some helper methods to grab the raw nodes and jQuery wrapped nodes.
 
 
-## Useage:
-
-</br>
 
 ### Install
+
 `mrt add meteor-parse-form` to install the Meteor package.  
 Or add the `parse_form.js` file and include a script tag `<script src='js/parse_form.js'>`.  
 
 
-
-
+## Useage: </br>
 
 Assuming that this piece of HTML is in the DOM, let's get started.
 
@@ -27,9 +24,9 @@ Assuming that this piece of HTML is in the DOM, let's get started.
 ```
 <br/>
 
+
+
 ### Parse
-
-
 
 We call `new ParseForm` and pass in the form element. Alternatively you can also pass in a jQuery selector like `#new-user-form`. To access the input values, use the input name as a key. e.g. `form.name == 'John Doe'`
 
@@ -43,25 +40,7 @@ var form = new ParseForm(e.target);
 ```
 <br/>
 
-### Validate
 
-If you would like to do simple validation, pass in an object with the input name as the key and a regex as the value. There are also a few shortcuts, `'email'`, `'notBlank'` and `'minLength6'`.
-
-```javascript
-var form = new ParseForm(e.target, {
-  validate: {
-    email: 'email',
-    username: /^[A-Z]{3,}$/i,
-    password: 'minLength6'
-  }
-});
-
-
-if (!form.validate.username) {
-  alert('not valid');
-}
-```
-<br/>
 
 ### Manipulate
 
@@ -71,5 +50,6 @@ If you would like to further manipulate the form and it's input elements, jQuery
 var form = new ParseForm('#new-user-form');
 
 form.$username.val('foo');
-form.$el.find('.thing')
+//  `form.$el` - grab the form wrapped in jQuery
+form.$el.find('.thing');
 ```
