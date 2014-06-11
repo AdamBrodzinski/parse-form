@@ -51,7 +51,12 @@ If you would like to further manipulate the form and it's input elements, jQuery
 ```js
 var form = new ParseForm('#new-user-form');
 
+// access the jQuery wrapped input
 form.$username.val('foo');
-//  `form.$el` - grab the form wrapped in jQuery
+
+// `form.$el` - grab the form wrapped in jQuery
 form.$el.find('.thing');
+
+ // clears contents of form
+form.reset();
 ```
