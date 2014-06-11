@@ -1,9 +1,9 @@
 {
   "name": "parse-form",
-  "description": "A simple utility to parse, validate, and manipulate forms",
+  "description": "A micro library used to parse and manipulate forms",
   "homepage": "https://github.com/AdamBrodzinski/parse-form",
   "author": "Adam Brodzinski",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "git": "https://github.com/AdamBrodzinski/parse-form.git"
 }
 
