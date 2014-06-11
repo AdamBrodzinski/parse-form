@@ -19,7 +19,8 @@ Assuming that this piece of HTML is in the DOM, let's get started.
     <input type="text"     name="email">
     <input type="text"     name="username">
     <input type="password" name="password">
-    <input type="submit" formnovalidate value="Create User">
+    
+    <input type="submit" value="Create User">
 </form>
 ```
 <br/>
@@ -32,11 +33,12 @@ We call `new ParseForm` and pass in the form element. Alternatively you can also
 
 
 ```javascript
-var form = new ParseForm(e.target);
+//  form = new ParseForm(e.target);
+var form = new ParseForm('#new-user-form');
 
-// form.name     ==  'John Doe'
-// form.email    ==  'john@gmail.com'
-// form.password == 'password1'
+form.name      //  ==  'John Doe'
+form.email     //  ==  'john@gmail.com'
+form.password  //  ==  'password1'
 ```
 <br/>
 
