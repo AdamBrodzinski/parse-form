@@ -8,11 +8,11 @@ Parse form is a micro library used to parse a form's input fields and return it'
 
 `mrt add meteor-parse-form` to install the Meteor package.  
 Or add the `parse_form.js` file and include a script tag `<script src='js/parse_form.js'>`.  
-<br>
+<br/>
 
 
 
-### Useage: </br>
+### Useage
 
 Assuming that this piece of HTML is in the DOM, let's get started.
 
