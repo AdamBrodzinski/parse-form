@@ -4,14 +4,10 @@ ParseForm = function(elem) {
   var self = this;
 
   if (!elem) return console.error('You must provide an element or selector');
-  
-  // save dom node if it's not a jquery selector
-  if (typeof this.el !== 'string') {
-    this.el = elem;
-  }
 
-  // cache form jQuery object
   this.$el = $(elem);
+
+  this.el = this.$el[0];
 
   // save each input into array, e.g. [{name: 'email', value:'jdoe@gmail.com'}]
   this.inputs = this.$el.serializeArray();
@@ -27,5 +23,10 @@ ParseForm = function(elem) {
     self['$' + name] = self.$el.find("input:nth-child("+ (i+1) +")");
   });
 
+};
+
+// reset/empty the form
+ParseForm.prototype.reset = function(){
+  this.el.reset();
 };
 
