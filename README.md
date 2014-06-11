@@ -29,8 +29,6 @@ Assuming that this piece of HTML is in the DOM, let's get started.
 
 
 
-### Parse
-
 We call `new ParseForm` and pass in the form element. Alternatively you can also pass in a jQuery selector like `#new-user-form`. To access the input values, use the input name as a key. e.g. `form.name == 'John Doe'`
 
 
