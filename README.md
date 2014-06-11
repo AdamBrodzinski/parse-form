@@ -36,9 +36,9 @@ We call `new ParseForm` and pass in the form element. Alternatively you can also
 //  form = new ParseForm(e.target);
 var form = new ParseForm('#new-user-form');
 
-form.name      //  ==  'John Doe'
-form.email     //  ==  'john@gmail.com'
-form.password  //  ==  'password1'
+form.name      ==  'John Doe'
+form.email     ==  'john@gmail.com'
+form.password  ==  'password1'
 ```
 <br/>
 
