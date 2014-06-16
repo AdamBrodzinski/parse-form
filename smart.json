@@ -3,7 +3,7 @@
   "description": "A micro library used to parse and manipulate forms",
   "homepage": "https://github.com/AdamBrodzinski/parse-form",
   "author": "Adam Brodzinski",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "git": "https://github.com/AdamBrodzinski/parse-form.git"
 }
 
