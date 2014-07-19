@@ -57,6 +57,9 @@ form.$username.val('foo');
 // `form.$el` - grab the form wrapped in jQuery
 form.$el.find('.thing');
 
+// grab the form's raw DOM node
+form.el
+
 // clears contents of form
 form.reset();
 ```
