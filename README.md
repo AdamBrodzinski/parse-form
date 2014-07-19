@@ -6,7 +6,7 @@ Parse form is a micro library used to parse a form's input fields and return it'
 
 ### Install
 
-In Meteor apps use `mrt add meteor-parse-form` to install the Meteor package.  
+In Meteor apps use `mrt add parse-form` to install the Meteor package.  
 Otherwise, add the `parse-form-min.js` file to your project with a script tag.  
 <br/>
 
